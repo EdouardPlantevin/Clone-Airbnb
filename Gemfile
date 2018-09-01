@@ -14,6 +14,7 @@ gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 
+gem 'toastr-rails'
 #image
 gem "paperclip", "~> 6.0.0"
 # See https://github.com/rails/execjs#readme for more supported runtimes
@@ -36,6 +37,7 @@ gem 'jquery-rails'
 #module user
 gem 'devise'
 gem 'devise-i18n'
+gem 'rails-i18n'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
