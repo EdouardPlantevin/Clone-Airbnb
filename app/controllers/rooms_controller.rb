@@ -21,6 +21,7 @@ class RoomsController < ApplicationController
   end
 
   def show
+    @rooms = Room.all
   end
 
   def edit
