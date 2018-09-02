@@ -66,6 +66,7 @@ class RoomsController < ApplicationController
       if current_user.id != @room.user_id
         flash[:danger] = "Vous n'avez le droit de modifier cette page"
         redirect_to root_path
+      end
     end
 
 end
