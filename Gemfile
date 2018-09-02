@@ -7,6 +7,8 @@ ruby '2.3.7'
 #scss
 gem 'font-awesome-sass', '~> 5.3.1'
 
+#google map
+gem 'geocoder'
 #cloud
 gem 'paperclip-cloudinary'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

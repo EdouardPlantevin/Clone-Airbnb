@@ -130,5 +130,37 @@
         </div>
       </div>
     </div>
+
+    <!-- Google map -->
+    <div class="row">
+      <div class="col-md-12">
+        <div id="map"></div>
+
+        <style>
+          #map {
+            height: 400px;
+            width: 100%;
+           }
+        </style>
+
+        <script>
+            // Initialize and add the map
+            function initMap() {
+             // The location of Uluru
+             var uluru = {lat: <%= @room.latitude %>, lng: <%= @room.longitude %>};
+             // The map, centered at Uluru
+             var map = new google.maps.Map(
+                 document.getElementById('map'), {zoom: 15, center: uluru});
+             // The marker, positioned at Uluru
+             var marker = new google.maps.Marker({position: uluru, map: map});
+            }
+        </script>
+        <script async defer
+               src="https://maps.googleapis.com/maps/api/js?key=713468761123-f8v4d5futj7j49h4mcu2m9cjpnjc1v58.apps.googleusercontent.com&callback=initMap">
+        </script>
+      </div>
+    </div>
+
+
   </div>
 </div>
