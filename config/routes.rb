@@ -4,7 +4,9 @@ Rails.application.routes.draw do
                       :controllers=>{:registrations=>'registrations'}
   root 'pages#home'
   resources :users, only: [:show]
-  resources :rooms
+  resources :rooms  do
+    resources :reservations, only: [:create]
+  end
   resources :photos
 
 
